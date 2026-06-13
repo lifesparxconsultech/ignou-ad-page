@@ -19,7 +19,7 @@ export default function ThankYouPage() {
   }, [seconds, router])
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#041e2e] via-[#012035] to-[#01344f] flex items-center justify-center px-[5%] py-16">
+    <main className="min-h-screen bg-gradient-to-br from-[#01507c] via-[#01345e] to-[#011e38] flex items-center justify-center px-[5%] py-16">
       <div className="max-w-lg w-full">
 
         {/* Card */}
@@ -32,7 +32,7 @@ export default function ThankYouPage() {
 
           {/* Heading */}
           <div>
-            <h1 className="text-2xl font-black text-[#041e2e] mb-2">You're All Set!</h1>
+            <h1 className="text-2xl font-black text-[#013a5e] mb-2">You&apos;re All Set!</h1>
             <p className="text-gray-400 text-sm leading-relaxed">
               Thank you for reaching out. Your request has been successfully submitted.
             </p>
@@ -49,7 +49,7 @@ export default function ThankYouPage() {
               </div>
               <div className="text-left">
                 <p className="text-xs font-black text-gray-400 uppercase tracking-wider mb-0.5">Next Step</p>
-                <p className="text-sm font-bold text-[#041e2e]">A counsellor will call you shortly</p>
+                <p className="text-sm font-bold text-[#013a5e]">A counsellor will call you shortly</p>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export default function ThankYouPage() {
               </div>
               <div className="text-left">
                 <p className="text-xs font-black text-gray-400 uppercase tracking-wider mb-0.5">Response Time</p>
-                <p className="text-sm font-bold text-[#041e2e]">Within 30 minutes during working hours</p>
+                <p className="text-sm font-bold text-[#013a5e]">Within 30 minutes during working hours</p>
               </div>
             </div>
           </div>

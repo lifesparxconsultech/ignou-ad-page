@@ -25,7 +25,7 @@ export default function WhyIgnou() {
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-black text-[#041e2e] mb-3">Why IGNOU Online?</h2>
+          <h2 className="text-3xl lg:text-4xl font-black text-[#01507c] mb-3">Why IGNOU Online?</h2>
           <div className="w-12 h-1 bg-[#f46f1a] rounded-full mx-auto" />
         </div>
 
@@ -41,7 +41,7 @@ export default function WhyIgnou() {
                 <div className="w-12 h-12 bg-[#e8f3fa] rounded-xl flex items-center justify-center">
                   <Icon className="text-[#01507c]" size={22} />
                 </div>
-                <h3 className="text-sm font-black text-[#041e2e] tracking-wide">{card.title}</h3>
+                <h3 className="text-sm font-black text-[#013a5e] tracking-wide">{card.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{card.desc}</p>
               </div>
             )

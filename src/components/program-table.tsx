@@ -33,7 +33,7 @@ export default function ProgramsTable() {
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl lg:text-4xl font-black text-[#041e2e] text-center mb-12">
+        <h2 className="text-3xl lg:text-4xl font-black text-[#01507c] text-center mb-12">
           4 Programs at a Glance
         </h2>
 
@@ -43,7 +43,7 @@ export default function ProgramsTable() {
 
             {/* Header */}
             <thead>
-              <tr className="bg-[#041e2e]">
+              <tr className="bg-[#01507c]">
                 {HEADERS.map((h) => (
                   <th
                     key={h}
@@ -63,9 +63,9 @@ export default function ProgramsTable() {
                   className={`border-t border-[#e2edf5] ${i % 2 === 0 ? 'bg-white' : 'bg-[#f7fafc]'}`}
                 >
                   <td className="px-6 py-5 font-bold text-[#f46f1a]">{p.name}</td>
-                  <td className="px-6 py-5 text-[#041e2e] font-medium">{p.duration}</td>
-                  <td className="px-6 py-5 text-[#041e2e] font-medium">{p.eligibility}</td>
-                  <td className="px-6 py-5 font-bold text-[#041e2e]">{p.fee}</td>
+                  <td className="px-6 py-5 text-[#013a5e] font-medium">{p.duration}</td>
+                  <td className="px-6 py-5 text-[#013a5e] font-medium">{p.eligibility}</td>
+                  <td className="px-6 py-5 font-bold text-[#013a5e]">{p.fee}</td>
                 </tr>
               ))}
             </tbody>

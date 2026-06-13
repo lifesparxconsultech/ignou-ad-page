@@ -28,7 +28,7 @@ export default function Testimonials() {
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl lg:text-4xl font-black text-[#041e2e] text-center mb-12">
+        <h2 className="text-3xl lg:text-4xl font-black text-[#01507c] text-center mb-12">
           What Our Students Say
         </h2>
 
@@ -57,7 +57,7 @@ export default function Testimonials() {
                   {t.initials}
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#041e2e]">{t.name}</p>
+                  <p className="text-sm font-bold text-[#013a5e]">{t.name}</p>
                   <p className="text-[11px] text-gray-400 font-semibold uppercase tracking-wide">{t.role}</p>
                 </div>
               </div>

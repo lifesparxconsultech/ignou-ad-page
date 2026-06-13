@@ -20,7 +20,7 @@ const STEPS = [
 
 export default function AdmissionProcess() {
   return (
-    <section className="bg-[#041e2e] py-20 px-[5%]">
+    <section className="bg-[#01507c] py-20 px-[5%]">
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}

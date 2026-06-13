@@ -51,7 +51,7 @@ export default function ProgramGuide() {
       <div className="max-w-5xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl lg:text-4xl font-black text-[#041e2e] text-center mb-12">
+        <h2 className="text-3xl lg:text-4xl font-black text-[#01507c] text-center mb-12">
           Detailed Program Guide
         </h2>
 
@@ -66,7 +66,7 @@ export default function ProgramGuide() {
                 className={`w-full text-left px-5 py-3.5 rounded-xl font-bold text-sm transition-all duration-150 ${
                   active === i
                     ? 'bg-[#f46f1a] text-white shadow-md'
-                    : 'bg-white border border-[#e2edf5] text-[#041e2e] hover:border-[#01507c]'
+                    : 'bg-white border border-[#e2edf5] text-[#01507c] hover:border-[#01507c]'
                 }`}
               >
                 {p.tab}
@@ -80,12 +80,12 @@ export default function ProgramGuide() {
             {/* Title + Price */}
             <div className="flex items-start justify-between gap-4 mb-5">
               <div>
-                <h3 className="text-xl font-black text-[#041e2e] mb-1">{program.title}</h3>
+                <h3 className="text-xl font-black text-[#013a5e] mb-1">{program.title}</h3>
                 <span className="text-xs font-black text-[#f46f1a] tracking-widest">{program.approval}</span>
               </div>
               <div className="shrink-0 bg-[#f7fafc] border border-[#e2edf5] rounded-xl px-4 py-2 text-center">
                 <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Starting From</p>
-                <p className="text-base font-black text-[#041e2e]">{program.price}</p>
+                <p className="text-base font-black text-[#013a5e]">{program.price}</p>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ export default function ProgramGuide() {
                   <p className="text-[10px] font-black text-gray-400 tracking-widest uppercase mb-2">Eligibility</p>
                   <ul className="flex flex-col gap-2">
                     {program.eligibility.map((e) => (
-                      <li key={e} className="flex items-center gap-2 text-sm text-[#041e2e] font-semibold">
+                      <li key={e} className="flex items-center gap-2 text-sm text-[#013a5e] font-semibold">
                         <CheckCircle size={16} className="text-[#f46f1a] shrink-0" />
                         {e}
                       </li>
@@ -115,7 +115,7 @@ export default function ProgramGuide() {
                 <p className="text-[10px] font-black text-gray-400 tracking-widest uppercase mb-3">Key Highlights</p>
                 <ul className="flex flex-col gap-2.5">
                   {program.highlights.map((h) => (
-                    <li key={h} className="flex items-center gap-2 text-sm text-[#041e2e] font-medium">
+                    <li key={h} className="flex items-center gap-2 text-sm text-[#013a5e] font-medium">
                       <Circle size={7} className="text-[#f46f1a] fill-[#f46f1a] shrink-0" />
                       {h}
                     </li>

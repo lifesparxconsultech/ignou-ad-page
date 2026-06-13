@@ -91,7 +91,7 @@ export default function HeroForm() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="font-bold text-[#041e2e] text-base">Book Your Free Session</h3>
+        <h3 className="font-bold text-[#013a5e] text-base">Speak to an Admission Counsellor</h3>
       </div>
 
       <div className="px-6 py-6 space-y-4">
@@ -182,6 +182,16 @@ export default function HeroForm() {
             {QUALIFICATIONS.map((q) => <option key={q} value={q}>{q}</option>)}
           </select>
           {errors.qualification && <p className="text-red-500 text-xs">{errors.qualification}</p>}
+        </div>
+
+        {/* Note */}
+        <div className="space-y-1.5 pt-1">
+          <p className="text-[11px] text-gray-500 font-medium leading-relaxed">
+            Only a certified mentor will assist you
+          </p>
+          <p className="text-[10px] text-gray-400 leading-relaxed">
+            I authorize a representative to contact me via phone and/or email. This will override registry on DND/NDNC.
+          </p>
         </div>
 
         {/* Error */}

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "IGNOU Online — MBA, BBA, MCA & BCA | UGC-DEB Approved Degrees",
-  description: "Enroll in IGNOU's UGC-DEB approved online MBA, BBA, MCA & BCA programs. 100% online, no campus visit, EMI from ₹999/month. 40 Lakh+ students enrolled. 2024 admissions open.",
+  description: "Enroll in IGNOU's UGC-DEB approved online MBA, BBA, MCA & BCA programs. 100% online, no campus visit, EMI from ₹999/month. 40 Lakh+ students enrolled. 2026 admissions open.",
 };
 
 export default function RootLayout({

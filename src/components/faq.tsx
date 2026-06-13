@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: 'When does the next batch start?',
-    a: 'IGNOU admissions are open twice a year — January and July sessions. The current 2024 session is open. Contact our counsellors immediately to secure your seat.',
+    a: 'IGNOU admissions are open twice a year — January and July sessions. The current 2026 session is open. Contact our counsellors immediately to secure your seat.',
   },
 ]
 
@@ -46,7 +46,7 @@ export default function Faq() {
       <div className="max-w-3xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl lg:text-4xl font-black text-[#041e2e] text-center mb-12">
+        <h2 className="text-3xl lg:text-4xl font-black text-[#01507c] text-center mb-12">
           Questions We Hear Every Day
         </h2>
 
@@ -61,7 +61,7 @@ export default function Faq() {
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-[#f7fafc] hover:bg-[#eef4f9] transition-colors duration-150"
               >
-                <span className="text-sm font-bold text-[#041e2e]">{faq.q}</span>
+                <span className="text-sm font-bold text-[#013a5e]">{faq.q}</span>
                 <ChevronDown
                   size={18}
                   className={`text-[#01507c] shrink-0 transition-transform duration-200 ${open === i ? 'rotate-180' : ''}`}

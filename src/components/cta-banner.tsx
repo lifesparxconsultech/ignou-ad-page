@@ -5,7 +5,7 @@ export default function CtaBanner() {
     <section className="bg-[#ddeaf4] py-16 px-[5%]">
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
 
-        <h2 className="text-2xl lg:text-3xl font-black text-[#041e2e]">
+        <h2 className="text-2xl lg:text-3xl font-black text-[#01507c]">
           Still deciding? Our counsellors are here to help.
         </h2>
 
