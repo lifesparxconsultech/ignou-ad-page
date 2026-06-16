@@ -6,11 +6,11 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white flex items-center justify-between px-[5%] h-16">
       <Link href="/" className="flex items-center gap-3 no-underline">
         <Image
-          src="/logo.png"
+          src="/logo-cloured.svg"
           alt="IGNOU Online Logo"
           width={120}
           height={40}
-          className="object-contain h-20 w-auto"
+          className="object-contain h-12 w-auto"
           priority
         />
       </Link>

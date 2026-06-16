@@ -61,7 +61,7 @@ export default function Hero() {
         </h2>
 
         <p className="text-[#b0d8ee] text-base font-medium leading-relaxed mb-8">
-          <strong className="text-white">100% online. No campus visit.</strong> Study while you work.<br />
+          <strong className="text-white">No campus visit.</strong> Study while you work.<br />
           EMI from <strong className="text-white">₹999/month</strong> — flexible exams, instant support.
         </p>
 

@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import { Phone, Mail } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
+import Link from 'next/link'
 
 const QUICK_LINKS = [
-  'Admission Process',
-  'Fee Details',
-  'Specializations',
-  'Contact Us',
+  { label: 'About Us', href: 'https://educollege.in/about' },
+  { label: 'Contact Us', href: 'https://educollege.in/contact' },
 ]
 
 export default function Footer() {
@@ -18,7 +17,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="flex flex-col gap-5">
           <Image
-            src="/logo.png"
+            src="/logo-cloured.svg"
             alt="IGNOU Online Logo"
             width={160}
             height={40}
@@ -41,72 +40,76 @@ export default function Footer() {
         <div>
           <p className="text-[11px] font-black text-[#f46f1a] tracking-widest uppercase mb-5">Quick Links</p>
           <ul className="flex flex-col gap-3">
-            {QUICK_LINKS.map((link) => (
-              <li key={link}>
-                <a                
-                  href="#"
+            {QUICK_LINKS.map(({ label, href }) => (
+              <li key={label}>
+                <Link
+                  href={href}
                   className="text-sm text-[#b0c8d8] hover:text-white font-medium transition-colors duration-150"
                 >
-                  {link}
-                </a>
+                  {label}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
         {/* Contact */}
-        {/* <div>
+        <div>
           <p className="text-[11px] font-black text-[#f46f1a] tracking-widest uppercase mb-5">Contact Support</p>
           <ul className="flex flex-col gap-4">
-            <li>
-              <a
-                href="tel:+91XXXXXXXXXX"
-                className="flex items-center gap-3 text-sm text-[#b0c8d8] hover:text-white font-medium transition-colors duration-150"
-              >
-                <Phone size={15} className="text-[#01507c] shrink-0" />
-                +91-XXXX-XXXXXX
-              </a>
+            <li className="flex items-start gap-3 text-sm text-[#b0c8d8] font-medium">
+              <MapPin size={15} className="text-[#01507c] shrink-0 mt-0.5" />
+              <span>EduCollege Counseling Hub, Dadri,<br />Uttar Pradesh, India – 203207</span>
             </li>
             <li>
               <a
-                href="mailto:admissions@ignou-online.in"
+                href="mailto:info@educollge.in"
                 className="flex items-center gap-3 text-sm text-[#b0c8d8] hover:text-white font-medium transition-colors duration-150"
               >
                 <Mail size={15} className="text-[#01507c] shrink-0" />
-                admissions@ignou-online.in
+                info@educollge.in
               </a>
             </li>
           </ul>
-        </div> */}
+        </div>
 
       </div>
 
       {/* Disclaimer */}
       <div className="border-t border-white/10 px-[5%] py-6 max-w-6xl mx-auto">
         <p className="text-xs text-[#b0c8d8]/60 leading-relaxed">
-          Disclaimer: EduCollege is an independent counseling platform and is not the official website of IGNOU. We provide professional counseling services to help students navigate the admission process for IGNOU Online programs. All final admission decisions and degree certifications are handled exclusively by Indira Gandhi National Open University. For direct applications, please visit the official university portal.
+          Disclaimer: EduCollege is an independent, privately-owned counseling
+          platform. We are NOT affiliated with, endorsed by, or sponsored by
+          Indira Gandhi National Open University (IGNOU) or any government
+          entity. Our services are limited to application guidance and
+          document verification. We DO NOT guarantee admission, seat
+          allocation, or degree approval—all final decisions rest solely with
+          IGNOU. Our counseling fees are separate from the official IGNOU
+          university application fee. For direct, free applications, please
+          visit the official IGNOU portal at{" "}
+          <a
+            href="https://ignou.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-[#b0c8d8]"
+          >
+            ignou.ac.in
+          </a>
+          . By using our site, you agree to our{" "}
+          <Link href="https://educollege.in/privacy-policy" className="underline hover:text-[#b0c8d8]">
+            Privacy Policy
+          </Link>{" "}
+          and{" "}
+          <Link href="https://educollege.in/terms-of-service" className="underline hover:text-[#b0c8d8]">
+            Terms of Service
+          </Link>
+          . See also our{" "}
+          <Link href="https://educollege.in/refund-policy" className="underline hover:text-[#b0c8d8]">
+            Refund Policy
+          </Link>
+          .
         </p>
       </div>
-
-      {/* Bottom Bar */}
-      {/* <div className="border-t border-[#01507c]/20 px-[5%] py-5">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-[11px] text-[#b0c8d8]/50 font-medium uppercase tracking-wide">
-            © 2026 IGNOU Online powered by EduCollege. All rights reserved.
-          </p>
-          <div className="flex items-center gap-5">
-            {['Privacy Policy', 'Terms of Use', 'Disclaimer'].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-[11px] text-[#b0c8d8]/50 hover:text-white font-semibold uppercase tracking-wide transition-colors duration-150"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div> */}
 
     </footer>
   )
