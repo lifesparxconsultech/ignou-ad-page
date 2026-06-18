@@ -31,9 +31,7 @@ export default function Footer() {
 
           <div>
             <p className="text-[11px] font-black text-[#f46f1a] tracking-widest uppercase mb-2">Office Location</p>
-            <p className="text-sm text-[#b0c8d8] leading-relaxed font-medium">
-              EduCollege Counseling Hub, Dadri,<br />Uttar Pradesh, India – 203207
-            </p>
+            <span>NX-One, Tech, Greater Noida West Rd, Zone IV, Bisrakh Jalalpur, Noida, Uttar Pradesh 201306</span>
           </div>
         </div>
 

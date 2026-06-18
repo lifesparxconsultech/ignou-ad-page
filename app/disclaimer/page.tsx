@@ -96,7 +96,7 @@ export default function DisclaimerPage() {
     <main className="max-w-full mx-auto px-6 py-20 bg-white">
 
       <h1 className="text-3xl font-bold text-gray-900 mb-2">Disclaimer</h1>
-      <p className="text-gray-400 text-sm mb-10">Last updated: June 2025</p>
+      <p className="text-gray-400 text-sm mb-10">Last updated: June 2026</p>
 
       <div className="space-y-10">
         {sections.map((section, i) => (

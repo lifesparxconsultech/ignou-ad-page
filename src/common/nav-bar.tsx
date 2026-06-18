@@ -19,7 +19,7 @@ export default function Navbar() {
         href="#hero-form"
         className="bg-[#f46f1a] hover:bg-[#d95e0d] text-white font-bold text-sm px-5 py-2.5 rounded-lg transition-all duration-150 whitespace-nowrap inline-block"
       >
-        Talk to a Counsellor — Free
+        Talk to a Counsellor
       </a>
     </nav>
   )

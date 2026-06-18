@@ -83,15 +83,34 @@ export default function HeroForm() {
 
   return (
     <div id="hero-form" className="bg-white rounded-2xl shadow-2xl shadow-black/30 overflow-hidden">
-
       {/* Header */}
-      <div className="bg-gray-50 border-b border-gray-100 px-6 py-4 flex items-center gap-2">
-        <div className="w-4 h-4 bg-[#f46f1a] rounded flex items-center justify-center">
-          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
+      <div className="bg-gray-50 border-b border-gray-100 px-6 py-4">
+        <div className="flex items-start gap-3">
+          <div className="w-4 h-4 bg-[#f46f1a] rounded flex items-center justify-center mt-1 flex-shrink-0">
+            <svg
+              className="w-2.5 h-2.5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={3}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[#013a5e] text-base leading-tight">
+              Speak to an Admission Counsellor
+            </h3>
+            <p className="text-[11px] text-gray-500 font-medium mt-1 leading-relaxed">
+              EduCollege is an independent counseling platform and is not affiliated with IGNOU.
+            </p>
+          </div>
         </div>
-        <h3 className="font-bold text-[#013a5e] text-base">Speak to an Admission Counsellor</h3>
       </div>
 
       <div className="px-6 py-6 space-y-4">
@@ -186,9 +205,6 @@ export default function HeroForm() {
 
         {/* Note */}
         <div className="space-y-1.5 pt-1">
-          <p className='text-[11px] text-gray-500 font-medium leading-relaxed'>
-            EduCollege is an independent counseling platform not affiliated with IGNOU
-          </p>
           <p className="text-[11px] text-gray-500 font-medium leading-relaxed">
             Only a certified mentor will assist you
           </p>
@@ -220,7 +236,7 @@ export default function HeroForm() {
               </>
             ) : (
               <>
-                Talk to a Counsellor — It's Free
+                Talk to a Counsellor
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
