@@ -154,21 +154,6 @@ export default function HeroForm() {
           {errors.cityState && <p className="text-red-500 text-xs">{errors.cityState}</p>}
         </div>
 
-        {/* Program */}
-        <div className="space-y-1.5">
-          <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider">Select Program</label>
-          <select
-            name="program"
-            value={form.program}
-            onChange={handleChange}
-            className={`w-full border rounded-lg px-4 py-2.5 text-sm outline-none focus:ring-2 focus:border-transparent transition-all appearance-none cursor-pointer ${form.program ? 'text-gray-800' : 'text-gray-400'} ${errors.program ? 'border-red-400 focus:ring-red-400' : 'border-gray-200 focus:ring-[#01507c]'}`}
-          >
-            <option value="" disabled>Select a program</option>
-            {PROGRAMS.map((p) => <option key={p} value={p}>{p}</option>)}
-          </select>
-          {errors.program && <p className="text-red-500 text-xs">{errors.program}</p>}
-        </div>
-
         {/* Qualification */}
         <div className="space-y-1.5">
           <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider">Highest Qualification</label>
@@ -184,8 +169,26 @@ export default function HeroForm() {
           {errors.qualification && <p className="text-red-500 text-xs">{errors.qualification}</p>}
         </div>
 
+        {/* Program */}
+        <div className="space-y-1.5">
+          <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider">Select Program</label>
+          <select
+            name="program"
+            value={form.program}
+            onChange={handleChange}
+            className={`w-full border rounded-lg px-4 py-2.5 text-sm outline-none focus:ring-2 focus:border-transparent transition-all appearance-none cursor-pointer ${form.program ? 'text-gray-800' : 'text-gray-400'} ${errors.program ? 'border-red-400 focus:ring-red-400' : 'border-gray-200 focus:ring-[#01507c]'}`}
+          >
+            <option value="" disabled>Select a program</option>
+            {PROGRAMS.map((p) => <option key={p} value={p}>{p}</option>)}
+          </select>
+          {errors.program && <p className="text-red-500 text-xs">{errors.program}</p>}
+        </div>
+
         {/* Note */}
         <div className="space-y-1.5 pt-1">
+          <p className='text-[11px] text-gray-500 font-medium leading-relaxed'>
+            EduCollege is an independent counseling platform not affiliated with IGNOU
+          </p>
           <p className="text-[11px] text-gray-500 font-medium leading-relaxed">
             Only a certified mentor will assist you
           </p>

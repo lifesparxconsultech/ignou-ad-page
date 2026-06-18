@@ -16,8 +16,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IGNOU Online — MBA, BBA, MCA & BCA | UGC-DEB Approved Degrees",
-  description: "Enroll in IGNOU's UGC-DEB approved online MBA, BBA, MCA & BCA programs. 100% online, no campus visit, EMI from ₹999/month. 40 Lakh+ students enrolled. 2026 admissions open.",
+  title: "IGNOU Online MBA, BBA, MCA & BCA Admission 2026 — EduCollege Counseling",
+  description:
+    "Get expert counseling for IGNOU Online MBA, BBA, MCA & BCA admission 2026. UGC-DEB approved degrees, EMI from ₹999/month. Free guidance by EduCollege — India's trusted education counseling platform.",
+  alternates: {
+    canonical: "https://educollege.in/universities/ignou-online",
+  },
+  openGraph: {
+    siteName: "EduCollege",
+    title: "IGNOU Online Programs — EduCollege Counseling",
+  },
 };
 
 export default function RootLayout({

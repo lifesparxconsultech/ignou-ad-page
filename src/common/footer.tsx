@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import { Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 const QUICK_LINKS = [
   { label: 'About Us', href: 'https://educollege.in/about' },
   { label: 'Contact Us', href: 'https://educollege.in/contact' },
+  { label: 'Disclaimer', href: '/disclaimer'}
 ]
 
 export default function Footer() {
@@ -17,11 +18,11 @@ export default function Footer() {
         {/* Brand */}
         <div className="flex flex-col gap-5">
           <Image
-            src="/logo-cloured.svg"
+            src="/logo.png"
             alt="IGNOU Online Logo"
             width={160}
             height={40}
-            className="object-contain h brightness-0 invert"
+            className="object-contain w-auto brightness-0 invert"
           />
 
           <p className="text-sm text-[#b0c8d8] leading-relaxed">
@@ -59,7 +60,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-4">
             <li className="flex items-start gap-3 text-sm text-[#b0c8d8] font-medium">
               <MapPin size={15} className="text-[#01507c] shrink-0 mt-0.5" />
-              <span>EduCollege Counseling Hub, Dadri,<br />Uttar Pradesh, India – 203207</span>
+              <span>NX-One, Tech, Greater Noida West Rd, Zone IV, Bisrakh Jalalpur, Noida, Uttar Pradesh 201306</span>
             </li>
             <li>
               <a
@@ -69,6 +70,14 @@ export default function Footer() {
                 <Mail size={15} className="text-[#01507c] shrink-0" />
                 info@educollge.in
               </a>
+            </li>
+            <li>
+              <span
+                className="flex items-center gap-3 text-sm text-[#b0c8d8] hover:text-white font-medium transition-colors duration-150"
+              >
+                <Phone size={15} className="text-[#01507c] shrink-0" />
+                +91-8920854291
+              </span>
             </li>
           </ul>
         </div>
@@ -103,11 +112,6 @@ export default function Footer() {
           <Link href="https://educollege.in/terms-of-service" className="underline hover:text-[#b0c8d8]">
             Terms of Service
           </Link>
-          . See also our{" "}
-          <Link href="https://educollege.in/refund-policy" className="underline hover:text-[#b0c8d8]">
-            Refund Policy
-          </Link>
-          .
         </p>
       </div>
 
